@@ -157,6 +157,74 @@
           </div>
         </div>
       </section>
+      <!-- Create Section -->
+      <section
+        class="section relative bg-backgroundColor3 w-full h-screen max-h-screen overflow-hidden"
+      >
+        <div class="w-full mt-8 px-4 sm:px-8">
+          <h2 class="text-5xl font-semibold text-tertiary text-center">
+            Start Creating Your Own<br />Custom Keyboard
+          </h2>
+          <div class="w-full flex items-center justify-center">
+            <div class="w-[10%] space-y-4">
+              <button
+                class="block p-2 rounded-md bg-backgroundColor1 hover:bg-tertiary transition duration-200"
+                :class="[clickedSwitch === 'silent-red' ? 'bg-tertiary' : 'bg-backgroundColor1']"
+                @click="onClickSwitch('silent-red')"
+              >
+                <img
+                  :src="require('@/assets/img/switch/cherrymx-silent-red.png')"
+                  class="w-16"
+                  alt=""
+                />
+              </button>
+              <button
+                class="block p-2 rounded-md hover:bg-tertiary transition duration-200"
+                :class="[clickedSwitch === 'blue' ? 'bg-tertiary' : 'bg-backgroundColor1']"
+                @click="onClickSwitch('blue')"
+              >
+                <img :src="require('@/assets/img/switch/cherrymx-blue.png')" class="w-16" alt="" />
+              </button>
+              <button
+                class="block p-2 rounded-md bg-backgroundColor1 hover:bg-tertiary transition duration-200"
+                :class="[clickedSwitch === 'silent-black' ? 'bg-tertiary' : 'bg-backgroundColor1']"
+                @click="onClickSwitch('silent-black')"
+              >
+                <img
+                  :src="require('@/assets/img/switch/cherrymx-silent-black.png')"
+                  class="w-16"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="w-[90%]">
+              <CustomKeyboard
+                class="w-full -mt-16"
+                :selected-color="pickedColor"
+                @key-click="handleKeyClick"
+              />
+            </div>
+            <div class="w-[10%]">
+              <input
+                v-model="pickedColor"
+                type="color"
+                class="border-none w-8 h-8 rounded-md shadow-md"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-center space-x-10 -mt-8">
+            <BaseButton
+              class="max-w-full px-6 py-4 rounded-md bg-inherit font-medium text-tertiary border border-tertiary hover:shadow-tertiary/50"
+            >
+              Download Design
+            </BaseButton>
+            <BaseButton
+              class="max-w-full px-8 py-4 rounded-md bg-tertiary font-medium border border-tertiary hover:shadow-tertiary/50 text-backgroundColor3"
+              >Buy Now</BaseButton
+            >
+          </div>
+        </div>
+      </section>
     </full-page>
   </div>
 </template>
