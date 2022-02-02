@@ -116,13 +116,104 @@
           alt=""
         />
       </section>
+      <!-- Designs Section -->
+      <section
+        class="section relative bg-backgroundColor2 w-full h-screen max-h-screen overflow-hidden"
+      >
+        <div class="w-full mt-16">
+          <h2 class="text-5xl font-semibold text-tertiary text-center">Some of Our Designs</h2>
+          <div class="py-12">
+            <swiper ref="mySwiper" :options="swiperOptions">
+              <swiper-slide>
+                <div>
+                  <img :src="require('@/assets/img/design/seaside.png')" class="w-full" alt="" />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div>
+                  <img :src="require('@/assets/img/design/p463-alpha.png')" class="w-full" alt="" />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div>
+                  <img :src="require('@/assets/img/design/katakana.png')" class="w-full" alt="" />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div>
+                  <img :src="require('@/assets/img/design/vaporwave.png')" class="w-full" alt="" />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div>
+                  <img
+                    :src="require('@/assets/img/design/the-root-of-all-evil.png')"
+                    class="w-full"
+                    alt=""
+                  />
+                </div>
+              </swiper-slide>
+            </swiper>
+          </div>
+        </div>
+      </section>
     </full-page>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 export default {
   name: 'IndexPage',
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  directives: {
+    swiper: directive,
+  },
+  data() {
+    return {
+      open: false,
+      dropdownNavbar: false,
+      swiperOptions: {
+        slidesPerView: 1.63,
+        centeredSlides: true,
+        spaceBetween: 50,
+        initialSlide: 2,
+      },
+      pickedColor: '#ffffff',
+      clickedSwitch: 'silent-red',
+    }
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper
+    },
+  },
+  methods: {
+    onClickSwitch(name) {
+      this.clickedSwitch = name
+    },
+    handleKeyClick() {
+      if (this.clickedSwitch === 'silent-red') {
+        const audio = new Audio(
+          'https://github.com/RSurya99/random-store/blob/main/red-switch.wav?raw=true'
+        )
+        audio.play()
+      } else if (this.clickedSwitch === 'blue') {
+        const audio = new Audio(
+          'https://github.com/RSurya99/random-store/blob/main/blue-switch.wav?raw=true'
+        )
+        audio.play()
+      } else {
+        const audio = new Audio(
+          'https://github.com/RSurya99/random-store/blob/main/blue-switch.wav?raw=true'
+        )
+        audio.play()
+      }
+    },
+  },
 }
 </script>
 

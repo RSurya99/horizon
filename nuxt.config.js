@@ -15,7 +15,7 @@ export default {
       },
     ],
   },
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.css', 'swiper/css/swiper.css'],
   plugins: ['~/plugins/swiper', '~/plugins/feather-icons'],
   components: true,
   buildModules: ['@nuxtjs/eslint-module', '@nuxt/postcss8'],
