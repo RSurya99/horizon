@@ -1,6 +1,7 @@
 <template>
   <div>
     <full-page>
+      <!-- Hero Section -->
       <section class="section bg-backgroundColor1 w-full h-screen max-h-screen overflow-hidden">
         <div class="max-w-screen-xl px-4 sm:px-8 mx-auto">
           <nav class="w-full flex items-center justify-between py-4">
@@ -57,6 +58,7 @@
           />
         </div>
       </section>
+      <!-- About Section -->
       <section class="section bg-backgroundColor2 w-full h-screen max-h-screen overflow-hidden">
         <div class="max-w-screen-xl mt-16 px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6">
           <div class="col-span-12 lg:col-span-6 mt-4">
@@ -92,6 +94,27 @@
             </div>
           </div>
         </div>
+      </section>
+      <!-- Structure Section -->
+      <section
+        class="section relative bg-backgroundColor3 w-full h-screen max-h-screen overflow-hidden"
+      >
+        <div class="w-full flex flex-col items-center justify-center mt-10 px-4 sm:px-8">
+          <h2 class="text-5xl font-semibold text-tertiary">Horizon Diagram Structure</h2>
+          <div class="w-[70%] mt-2">
+            <img :src="require('@/assets/img/structure-diagram.png')" alt="" />
+          </div>
+        </div>
+        <img
+          :src="require('@/assets/img/diagram-text.png')"
+          class="absolute -bottom-20 left-4 w-16"
+          alt=""
+        />
+        <img
+          :src="require('@/assets/img/structure-text.png')"
+          class="absolute -top-28 right-4 w-14"
+          alt=""
+        />
       </section>
     </full-page>
   </div>
