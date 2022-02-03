@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transform-fade-down-enter-active,
+.transform-fade-down-leave-active {
+  @apply transition-all translate-y-0 duration-300;
+}
+
+.transform-fade-down-enter, .transform-fade-down-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  @apply opacity-0 transform -translate-y-2;
+}
+
+.paragraph {
+  @apply tracking-wide leading-relaxed;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+}
+
+.colorpick-eyedropper-input-trigger {
+  display: none !important;
+}
