@@ -24,8 +24,7 @@
                 </h1>
               </div>
               <p class="paragraph hidden sm:block">
-                Is a place for those who want to make a custom keyboard that has a solid quality
-                with easily.
+                Horizon is a place to create custom keycaps for mechanical keyboard easily.
               </p>
               <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2">
                 <BaseButton class="max-w-full px-8 py-4 bg-secondary text-white">
