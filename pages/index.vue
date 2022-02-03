@@ -2,21 +2,9 @@
   <div>
     <full-page>
       <!-- Hero Section -->
-      <section class="section bg-backgroundColor1 w-full h-screen max-h-screen overflow-hidden">
+      <BaseSection class="bg-backgroundColor1">
         <div class="max-w-screen-xl px-4 sm:px-8 mx-auto">
-          <nav class="w-full flex items-center justify-between py-4">
-            <div>
-              <img :src="require('@/assets/img/logo.png')" class="w-22 xl:w-36" alt="" />
-            </div>
-            <ul class="flex flex-row items-center space-x-2">
-              <NavLink name="Home" url="#" />
-              <NavLink name="Product" url="#" />
-              <NavLink name="Structure" url="#" />
-              <NavLink name="Our Designs" url="#" />
-              <NavLink name="Create New" url="#" />
-            </ul>
-            <base-button class="px-8 py-3 mt-2 bg-secondary text-white">Contact Us</base-button>
-          </nav>
+          <BaseNavbar />
           <div class="mt-8 px-4 grid grid-cols-12 gap-x-6 overflow-hidden">
             <div
               class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-6 px-2 text-center sm:text-left"
@@ -24,10 +12,15 @@
               <div class="space-y-3">
                 <span class="text-base text-secondary font-semibold uppercase">Start Today</span>
                 <h1
-                  class="text-[2.5rem] sm:text-5xl xl:text-6xl text-primaryText font-bold leading-tight capitalize"
+                  class="relative text-[2.5rem] sm:text-5xl xl:text-6xl text-primaryText font-bold leading-tight capitalize"
                 >
                   Make Your
                   <span class="text-secondary">Custom Keyboard</span> Come True
+                  <img
+                    :src="require('@/assets/img/keyboard.svg')"
+                    class="absolute top-[6.85rem] right-36 w-16 h-16"
+                    alt=""
+                  />
                 </h1>
               </div>
               <p class="paragraph hidden sm:block">
@@ -57,9 +50,9 @@
             class="hidden sm:block absolute top-20 sm:top-36 right-16 lg:right-0 lg:left-[30rem] w-8"
           />
         </div>
-      </section>
+      </BaseSection>
       <!-- About Section -->
-      <section class="section bg-backgroundColor2 w-full h-screen max-h-screen overflow-hidden">
+      <BaseSection class="bg-backgroundColor2">
         <div class="max-w-screen-xl mt-16 px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6">
           <div class="col-span-12 lg:col-span-6 mt-4">
             <div class="w-full">
@@ -94,11 +87,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </BaseSection>
       <!-- Structure Section -->
-      <section
-        class="section relative bg-backgroundColor3 w-full h-screen max-h-screen overflow-hidden"
-      >
+      <BaseSection class="relative bg-backgroundColor3">
         <div class="w-full flex flex-col items-center justify-center mt-10 px-4 sm:px-8">
           <h2 class="text-5xl font-semibold text-tertiary">Horizon Diagram Structure</h2>
           <div class="w-[70%] mt-2">
@@ -115,11 +106,9 @@
           class="absolute -top-28 right-4 w-14"
           alt=""
         />
-      </section>
+      </BaseSection>
       <!-- Designs Section -->
-      <section
-        class="section relative bg-backgroundColor2 w-full h-screen max-h-screen overflow-hidden"
-      >
+      <BaseSection class="relative bg-backgroundColor2">
         <div class="w-full mt-16">
           <h2 class="text-5xl font-semibold text-tertiary text-center">Some of Our Designs</h2>
           <div class="py-12">
@@ -156,11 +145,9 @@
             </swiper>
           </div>
         </div>
-      </section>
+      </BaseSection>
       <!-- Create Section -->
-      <section
-        class="section relative bg-backgroundColor3 w-full h-screen max-h-screen overflow-hidden"
-      >
+      <BaseSection class="relative bg-backgroundColor3">
         <div class="w-full mt-8 px-4 sm:px-8">
           <h2 class="text-5xl font-semibold text-tertiary text-center">
             Start Creating Your Own<br />Custom Keyboard
@@ -212,19 +199,15 @@
               />
             </div>
           </div>
-          <div class="flex items-center justify-center space-x-10 -mt-8">
+          <div class="w-full flex justify-center -mt-8">
             <BaseButton
               class="max-w-full px-6 py-4 rounded-md bg-inherit font-medium text-tertiary border border-tertiary hover:shadow-tertiary/50"
             >
               Download Design
             </BaseButton>
-            <BaseButton
-              class="max-w-full px-8 py-4 rounded-md bg-tertiary font-medium border border-tertiary hover:shadow-tertiary/50 text-backgroundColor3"
-              >Buy Now</BaseButton
-            >
           </div>
         </div>
-      </section>
+      </BaseSection>
     </full-page>
   </div>
 </template>
@@ -245,7 +228,12 @@ export default {
       open: false,
       dropdownNavbar: false,
       swiperOptions: {
-        slidesPerView: 1.63,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1.65,
         centeredSlides: true,
         spaceBetween: 50,
         initialSlide: 2,

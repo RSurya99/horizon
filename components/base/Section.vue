@@ -1,7 +1,7 @@
 <template>
-  <div class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" v-bind="$attrs">
+  <section class="section w-full h-screen max-h-screen overflow-hidden" v-bind="$attrs">
     <slot></slot>
-  </div>
+  </section>
 </template>
 <script>
 export default {
