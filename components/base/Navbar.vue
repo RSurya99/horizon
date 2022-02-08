@@ -10,11 +10,18 @@
       <NavLink name="Our Designs" url="#" />
       <NavLink name="Create New" url="#" />
     </ul>
-    <base-button class="px-8 py-3 mt-2 bg-secondary text-white">Contact Us</base-button>
+    <base-button class="px-8 py-3 mt-2 bg-secondary text-white" @click="onContactClick">
+      Contact Us
+    </base-button>
   </nav>
 </template>
 <script>
 export default {
   name: 'BaseNavbar',
+  methods: {
+    onContactClick() {
+      window.open('https://t.me/rsurya99', '_blank')
+    },
+  },
 }
 </script>

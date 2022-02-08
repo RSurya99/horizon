@@ -2,7 +2,7 @@
   <div>
     <full-page>
       <!-- Hero Section -->
-      <BaseSection class="bg-backgroundColor1">
+      <BaseSection id="hero" class="bg-backgroundColor1">
         <div class="max-w-screen-xl px-4 sm:px-8 mx-auto">
           <BaseNavbar />
           <div class="mt-8 px-4 grid grid-cols-12 gap-x-6 overflow-hidden">
@@ -32,6 +32,7 @@
                 </BaseButton>
                 <BaseButton
                   class="max-w-full px-6 py-4 bg-inherit text-secondary border border-secondary flex items-center justify-center space-x-1"
+                  @click="openFrame = !openFrame"
                 >
                   <span>Watch Tutorial</span>
                   <PlayCircleIcon size="22" />
@@ -44,6 +45,29 @@
               </div>
             </div>
           </div>
+          <transition name="transform-fade-down">
+            <div
+              v-show="openFrame"
+              class="w-full h-screen absolute z-20 top-0 left-0 bg-[rgba(0,0,0,0.7)] flex items-center justify-center"
+            >
+              <BaseButton
+                class="absolute top-0 right-0 p-4 m-4 text-white bg-[rgba(0,0,0,0.7)] hover:shadow-gray-700/50"
+                @click="openFrame = !openFrame"
+              >
+                <XIcon size="30" />
+              </BaseButton>
+              <iframe
+                width="840"
+                height="472"
+                src="https://www.youtube.com/embed/k84N-KCyRYM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="rounded shadow-md"
+              ></iframe>
+            </div>
+          </transition>
           <img
             :src="require('~/assets/img/star.svg')"
             class="hidden sm:block absolute top-20 sm:top-36 right-16 lg:right-0 lg:left-[30rem] w-8"
@@ -51,7 +75,7 @@
         </div>
       </BaseSection>
       <!-- About Section -->
-      <BaseSection class="bg-backgroundColor2">
+      <BaseSection id="about" class="bg-backgroundColor2">
         <div class="max-w-screen-xl mt-16 px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6">
           <div class="col-span-12 lg:col-span-6 mt-4">
             <div class="w-full">
@@ -88,7 +112,7 @@
         </div>
       </BaseSection>
       <!-- Structure Section -->
-      <BaseSection class="relative bg-backgroundColor3">
+      <BaseSection id="structure" class="relative bg-backgroundColor3">
         <div class="w-full flex flex-col items-center justify-center mt-10 px-4 sm:px-8">
           <h2 class="text-5xl font-semibold text-tertiary">Horizon Diagram Structure</h2>
           <div class="w-[70%] mt-2">
@@ -107,7 +131,7 @@
         />
       </BaseSection>
       <!-- Designs Section -->
-      <BaseSection class="relative bg-backgroundColor2">
+      <BaseSection id="designs" class="relative bg-backgroundColor2">
         <div class="w-full mt-16">
           <h2 class="text-5xl font-semibold text-tertiary text-center">Some of Our Designs</h2>
           <div class="py-12">
@@ -146,7 +170,7 @@
         </div>
       </BaseSection>
       <!-- Create Section -->
-      <BaseSection class="relative bg-backgroundColor3">
+      <BaseSection id="create" class="relative bg-backgroundColor3">
         <div class="w-full mt-8 px-4 sm:px-8">
           <h2 class="text-5xl font-semibold text-tertiary text-center">
             Start Creating Your Own<br />Custom Keyboard
@@ -201,6 +225,7 @@
           <div class="w-full flex justify-center -mt-8">
             <BaseButton
               class="max-w-full px-6 py-4 rounded-md bg-inherit font-medium text-tertiary border border-tertiary hover:shadow-tertiary/50"
+              @click="onClickDownloadSVG"
             >
               Download Design
             </BaseButton>
@@ -239,12 +264,16 @@ export default {
       },
       pickedColor: '#ffffff',
       clickedSwitch: 'silent-red',
+      openFrame: false,
     }
   },
   computed: {
     swiper() {
       return this.$refs.mySwiper.$swiper
     },
+  },
+  mounted() {
+    this.downloadSVG()
   },
   methods: {
     onClickSwitch(name) {
@@ -267,6 +296,22 @@ export default {
         )
         audio.play()
       }
+    },
+    downloadSVG() {
+      const svg = document.getElementById('custom-keyboard').outerHTML
+      const blob = new Blob([svg.toString()])
+      const element = document.createElement('a')
+      element.download = 'custom-keycaps.svg'
+      element.href = window.URL.createObjectURL(blob)
+    },
+    onClickDownloadSVG() {
+      const svg = document.getElementById('custom-keyboard').outerHTML
+      const blob = new Blob([svg.toString()])
+      const element = document.createElement('a')
+      element.download = 'custom-keycaps.svg'
+      element.href = window.URL.createObjectURL(blob)
+      element.click()
+      element.remove()
     },
   },
 }

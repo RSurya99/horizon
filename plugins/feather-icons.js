@@ -1,8 +1,9 @@
 import Vue from 'vue'
-import { PlayCircleIcon } from 'vue-feather-icons'
+import { PlayCircleIcon, XIcon } from 'vue-feather-icons'
 
 const components = {
   PlayCircleIcon,
+  XIcon,
 }
 
 Object.entries(components).forEach(([name, component]) => {

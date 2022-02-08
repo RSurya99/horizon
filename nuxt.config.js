@@ -26,7 +26,7 @@ export default {
       {
         activeSection: 0,
         mouseWheelSensitivity: 120,
-        showIndicators: false,
+        showIndicators: true,
       },
     ],
   ],
