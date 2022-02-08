@@ -176,7 +176,7 @@
             Start Creating Your Own<br />Custom Keyboard
           </h2>
           <div class="w-full flex items-center justify-center">
-            <div class="w-[10%] space-y-4">
+            <div class="w-[10%] space-y-4 ml-4">
               <button
                 class="block p-2 rounded-md bg-backgroundColor1 hover:bg-tertiary transition duration-200"
                 :class="[clickedSwitch === 'silent-red' ? 'bg-tertiary' : 'bg-backgroundColor1']"
@@ -214,7 +214,13 @@
                 @key-click="handleKeyClick"
               />
             </div>
-            <div class="w-[10%]">
+            <div
+              class="w-[10%] h-full relative -left-8 bottom-4 flex flex-col items-center justify-center space-y-4 mb-4"
+            >
+              <span class="text-lg font-semibold text-center text-white"
+                >Pick color <br />
+                from here</span
+              >
               <input
                 v-model="pickedColor"
                 type="color"
@@ -292,7 +298,7 @@ export default {
         audio.play()
       } else {
         const audio = new Audio(
-          'https://github.com/RSurya99/random-store/blob/main/blue-switch.wav?raw=true'
+          'https://github.com/RSurya99/random-store/blob/main/black-switch.wav?raw=true'
         )
         audio.play()
       }
