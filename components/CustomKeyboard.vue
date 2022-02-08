@@ -3362,7 +3362,7 @@
           fill="white"
         />
       </g>
-      <rect x="320" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="320" y="386.031" width="68" height="68" rx="5.66929" :fill="color.q" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -3391,6 +3391,7 @@
         rx="5.67"
         fill="url(#paint153_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('q')"
       />
       <rect
         x="330.5"
@@ -3502,7 +3503,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="392" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="392" y="386.031" width="68" height="68" rx="5.66929" :fill="color.w" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -3531,6 +3532,7 @@
         rx="5.67"
         fill="url(#paint159_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('w')"
       />
       <rect
         x="402.5"
@@ -3642,7 +3644,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="464" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="464" y="386.031" width="68" height="68" rx="5.66929" :fill="color.e" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -3671,6 +3673,7 @@
         rx="5.67"
         fill="url(#paint165_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('e')"
       />
       <rect
         x="474.5"
@@ -3782,7 +3785,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="536" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="536" y="386.031" width="68" height="68" rx="5.66929" :fill="color.r" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -3811,6 +3814,7 @@
         rx="5.67"
         fill="url(#paint171_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('r')"
       />
       <rect
         x="546.5"
@@ -3922,7 +3926,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="608" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="608" y="386.031" width="68" height="68" rx="5.66929" :fill="color.t" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -3951,6 +3955,7 @@
         rx="5.67"
         fill="url(#paint177_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('t')"
       />
       <rect
         x="618.5"
@@ -4062,7 +4067,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="680" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="680" y="386.031" width="68" height="68" rx="5.66929" :fill="color.y" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4091,6 +4096,7 @@
         rx="5.67"
         fill="url(#paint183_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('y')"
       />
       <rect
         x="690.5"
@@ -4202,7 +4208,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="752" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="752" y="386.031" width="68" height="68" rx="5.66929" :fill="color.u" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4231,6 +4237,7 @@
         rx="5.67"
         fill="url(#paint189_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('u')"
       />
       <rect
         x="762.5"
@@ -4342,7 +4349,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="824" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="824" y="386.031" width="68" height="68" rx="5.66929" :fill="color.i" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4371,6 +4378,7 @@
         rx="5.67"
         fill="url(#paint195_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('i')"
       />
       <rect
         x="834.5"
@@ -4482,7 +4490,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="896" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="896" y="386.031" width="68" height="68" rx="5.66929" :fill="color.o" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4511,6 +4519,7 @@
         rx="5.67"
         fill="url(#paint201_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('o')"
       />
       <rect
         x="906.5"
@@ -4622,7 +4631,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="968" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="968" y="386.031" width="68" height="68" rx="5.66929" :fill="color.p" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4651,6 +4660,7 @@
         rx="5.67"
         fill="url(#paint207_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('p')"
       />
       <rect
         x="978.5"
@@ -4762,7 +4772,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="1040" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="1040" y="386.031" width="68" height="68" rx="5.66929" :fill="color.lbracket" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4791,6 +4801,7 @@
         rx="5.67"
         fill="url(#paint213_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('lbracket')"
       />
       <rect
         x="1050.5"
@@ -4908,7 +4919,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="1112" y="386.031" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="1112" y="386.031" width="68" height="68" rx="5.66929" :fill="color.rbracket" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -4937,6 +4948,7 @@
         rx="5.67"
         fill="url(#paint219_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('rbracket')"
       />
       <rect
         x="1122.5"
@@ -5322,7 +5334,7 @@
           fill="white"
         />
       </g>
-      <rect x="337" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="337" y="458.063" width="68" height="68" rx="5.66929" :fill="color.a" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -5351,6 +5363,7 @@
         rx="5.67"
         fill="url(#paint237_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('a')"
       />
       <rect
         x="347.5"
@@ -5462,7 +5475,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="409" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="409" y="458.063" width="68" height="68" rx="5.66929" :fill="color.s" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -5491,6 +5504,7 @@
         rx="5.67"
         fill="url(#paint243_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('s')"
       />
       <rect
         x="419.5"
@@ -5602,7 +5616,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="481" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="481" y="458.063" width="68" height="68" rx="5.66929" :fill="color.d" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -5631,6 +5645,7 @@
         rx="5.67"
         fill="url(#paint249_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('d')"
       />
       <rect
         x="491.5"
@@ -5742,7 +5757,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="553" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="553" y="458.063" width="68" height="68" rx="5.66929" :fill="color.f" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -5771,6 +5786,7 @@
         rx="5.67"
         fill="url(#paint255_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('f')"
       />
       <rect
         x="563.5"
@@ -5882,7 +5898,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="625" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="625" y="458.063" width="68" height="68" rx="5.66929" :fill="color.g" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -5911,6 +5927,7 @@
         rx="5.67"
         fill="url(#paint261_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('g')"
       />
       <rect
         x="635.5"
@@ -6022,7 +6039,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="697" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="697" y="458.063" width="68" height="68" rx="5.66929" :fill="color.h" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6051,6 +6068,7 @@
         rx="5.67"
         fill="url(#paint267_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('h')"
       />
       <rect
         x="707.5"
@@ -6162,7 +6180,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="769" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="769" y="458.063" width="68" height="68" rx="5.66929" :fill="color.j" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6191,6 +6209,7 @@
         rx="5.67"
         fill="url(#paint273_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('j')"
       />
       <rect
         x="779.5"
@@ -6302,7 +6321,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="841" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="841" y="458.063" width="68" height="68" rx="5.66929" :fill="color.k" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6331,6 +6350,7 @@
         rx="5.67"
         fill="url(#paint279_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('k')"
       />
       <rect
         x="851.5"
@@ -6442,7 +6462,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="913" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="913" y="458.063" width="68" height="68" rx="5.66929" :fill="color.l" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6471,6 +6491,7 @@
         rx="5.67"
         fill="url(#paint285_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('l')"
       />
       <rect
         x="923.5"
@@ -6582,7 +6603,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="985" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="985" y="458.063" width="68" height="68" rx="5.66929" :fill="color.semicolon" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6611,6 +6632,7 @@
         rx="5.67"
         fill="url(#paint291_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('semicolon')"
       />
       <rect
         x="995.5"
@@ -6728,7 +6750,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="1057" y="458.063" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="1057" y="458.063" width="68" height="68" rx="5.66929" :fill="color.quote" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -6757,6 +6779,7 @@
         rx="5.67"
         fill="url(#paint297_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('quote')"
       />
       <rect
         x="1067.5"
@@ -7108,7 +7131,7 @@
           fill="white"
         />
       </g>
-      <rect x="375" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="375" y="530.142" width="68" height="68" rx="5.66929" :fill="color.z" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7137,6 +7160,7 @@
         rx="5.67"
         fill="url(#paint315_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('z')"
       />
       <rect
         x="385.5"
@@ -7248,7 +7272,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="447" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="447" y="530.142" width="68" height="68" rx="5.66929" :fill="color.x" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7277,6 +7301,7 @@
         rx="5.67"
         fill="url(#paint321_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('x')"
       />
       <rect
         x="457.5"
@@ -7388,7 +7413,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="519" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="519" y="530.142" width="68" height="68" rx="5.66929" :fill="color.c" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7417,6 +7442,7 @@
         rx="5.67"
         fill="url(#paint327_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('c')"
       />
       <rect
         x="529.5"
@@ -7528,7 +7554,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="591" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="591" y="530.142" width="68" height="68" rx="5.66929" :fill="color.v" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7557,6 +7583,7 @@
         rx="5.67"
         fill="url(#paint333_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('v')"
       />
       <rect
         x="601.5"
@@ -7668,7 +7695,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="663" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="663" y="530.142" width="68" height="68" rx="5.66929" :fill="color.b" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7697,6 +7724,7 @@
         rx="5.67"
         fill="url(#paint339_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('b')"
       />
       <rect
         x="673.5"
@@ -7808,7 +7836,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="735" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="735" y="530.142" width="68" height="68" rx="5.66929" :fill="color.n" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7837,6 +7865,7 @@
         rx="5.67"
         fill="url(#paint345_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('n')"
       />
       <rect
         x="745.5"
@@ -7948,7 +7977,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="807" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="807" y="530.142" width="68" height="68" rx="5.66929" :fill="color.m" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -7977,6 +8006,7 @@
         rx="5.67"
         fill="url(#paint351_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('m')"
       />
       <rect
         x="817.5"
@@ -8088,7 +8118,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="879" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="879" y="530.142" width="68" height="68" rx="5.66929" :fill="color.lessThan" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -8117,6 +8147,7 @@
         rx="5.67"
         fill="url(#paint357_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('lessThan')"
       />
       <rect
         x="889.5"
@@ -8234,7 +8265,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="951" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="951" y="530.142" width="68" height="68" rx="5.66929" :fill="color.greaterThan" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -8263,6 +8294,7 @@
         rx="5.67"
         fill="url(#paint363_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('greaterThan')"
       />
       <rect
         x="961.5"
@@ -8380,7 +8412,7 @@
           fill="#629990"
         />
       </g>
-      <rect x="1023" y="530.142" width="68" height="68" rx="5.66929" fill="#E1D8CD" />
+      <rect x="1023" y="530.142" width="68" height="68" rx="5.66929" :fill="color.question" />
       <g style="mix-blend-mode: multiply">
         <path
           fill-rule="evenodd"
@@ -8409,6 +8441,7 @@
         rx="5.67"
         fill="url(#paint369_linear_504_3)"
         fill-opacity="0.2"
+        @click="clickHandler('question')"
       />
       <rect
         x="1033.5"
@@ -27376,6 +27409,39 @@ export default {
         lctrl: '#7C947D',
         lwin: '#629990',
         lalt: '#C2C0A9',
+        q: '#E1D8CD',
+        w: '#E1D8CD',
+        e: '#E1D8CD',
+        r: '#E1D8CD',
+        t: '#E1D8CD',
+        y: '#E1D8CD',
+        u: '#E1D8CD',
+        i: '#E1D8CD',
+        o: '#E1D8CD',
+        p: '#E1D8CD',
+        lbracket: '#E1D8CD',
+        rbracket: '#E1D8CD',
+        a: '#E1D8CD',
+        s: '#E1D8CD',
+        d: '#E1D8CD',
+        f: '#E1D8CD',
+        g: '#E1D8CD',
+        h: '#E1D8CD',
+        j: '#E1D8CD',
+        k: '#E1D8CD',
+        l: '#E1D8CD',
+        semicolon: '#E1D8CD',
+        quote: '#E1D8CD',
+        z: '#E1D8CD',
+        x: '#E1D8CD',
+        c: '#E1D8CD',
+        v: '#E1D8CD',
+        b: '#E1D8CD',
+        n: '#E1D8CD',
+        m: '#E1D8CD',
+        lessThan: '#E1D8CD',
+        greaterThan: '#E1D8CD',
+        question: '#E1D8CD',
       },
     }
   },
