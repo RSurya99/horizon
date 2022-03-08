@@ -288,17 +288,17 @@ export default {
     handleKeyClick() {
       if (this.clickedSwitch === 'silent-red') {
         const audio = new Audio(
-          'https://github.com/RSurya99/random-store/blob/main/red-switch.wav?raw=true'
+          'https://github.com/self-learnary/random-store/blob/main/switch-sound/red-switch.wav?raw=true'
         )
         audio.play()
       } else if (this.clickedSwitch === 'blue') {
         const audio = new Audio(
-          'https://github.com/RSurya99/random-store/blob/main/blue-switch.wav?raw=true'
+          'https://github.com/self-learnary/random-store/blob/main/switch-sound/blue-switch.wav?raw=true'
         )
         audio.play()
       } else {
         const audio = new Audio(
-          'https://github.com/RSurya99/random-store/blob/main/black-switch.wav?raw=true'
+          'https://github.com/self-learnary/random-store/blob/main/switch-sound/black-switch.wav?raw=true'
         )
         audio.play()
       }
